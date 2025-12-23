@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRISHTII EYECARE | Ultra-Premium Eyewear Boutique</title>
+  <meta name="description" content="Kolkata's most exclusive optical experience. Premium frames from ₹499. Exclusive ₹999 Grand Slam Offer. Expert care by Dr. Suman Talapatra.">
+  <meta name="theme-color" content="#050505">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Luxury Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-light: #F9E29C;
+      --luxury-black: #050505;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--luxury-black);
+      color: white;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+    /* Global Text Clipping Fix */
+    p, span, h1, h2, h3, h4, h5, h6, .price {
+      line-height: 1.6 !important;
+      padding-bottom: 0.15rem !important;
+      overflow: visible !important;
+    }
+    .luxury-glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFD700 0%, #FFB347 50%, #FFCC33 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    .shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+    .shimmer::after {
+      content: '';
+      position: absolute;
+      top: -150%;
+      left: -150%;
+      width: 300%;
+      height: 300%;
+      background: linear-gradient(
+        45deg,
+        transparent 45%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 55%
+      );
+      transition: all 0.8s ease;
+      transform: rotate(45deg);
+      pointer-events: none;
+    }
+    .shimmer:hover::after {
+      top: 150%;
+      left: 150%;
+    }
+
+    /* Premium Gold Shimmer Variant */
+    .shimmer-gold {
+      position: relative;
+      overflow: hidden;
+    }
+    .shimmer-gold::after {
+      content: '';
+      position: absolute;
+      top: -150%;
+      left: -150%;
+      width: 300%;
+      height: 300%;
+      background: linear-gradient(
+        45deg,
+        transparent 45%,
+        rgba(212, 175, 55, 0.25) 50%,
+        transparent 55%
+      );
+      transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: rotate(45deg);
+      pointer-events: none;
+    }
+    .shimmer-gold:hover::after {
+      top: 150%;
+      left: 150%;
+    }
+
+    .font-price {
+      font-size: clamp(1.2rem, 5vw, 1.8rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #050505;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D4AF37;
+      border-radius: 10px;
+    }
+    @keyframes pulse-gold {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+      50% { box-shadow: 0 0 20px 10px rgba(212, 175, 55, 0); }
+    }
+    .pulse-gold {
+      animation: pulse-gold 2s infinite;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="selection:bg-yellow-500 selection:text-black">
+  <div id="root"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      window.openTryOnWhatsApp = function(frameName) {
+        const phone = "919064000639";
+        const message = `Hi Drishtii Eyecare 👓, I'm exploring the luxury "${frameName}" frames. I'd like a virtual styling session.`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+      };
+    });
+  </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

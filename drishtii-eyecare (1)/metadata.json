@@ -1,0 +1,7 @@
+{
+  "name": "Drishtii Eyecare ",
+  "description": "Premium optical shop web app for Drishtii Eyecare Bethuadahari, featuring AI chatbot, product catalog, and virtual try-on.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
